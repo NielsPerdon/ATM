@@ -12,6 +12,8 @@ De backend van dit project bestaat uit 7 onderdelen.
 7. afsluiten
 
 Hoe maak je een txt bestand aan(bij de path moet je je eigen path neerzettenen de laatste \\atm.txt is de naam voor je file die automatisch word aangemaakt):
+
+
 import java.io.*;
 
 public class atm {
