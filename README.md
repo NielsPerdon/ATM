@@ -13,11 +13,6 @@ De backend van dit project bestaat uit 7 onderdelen.
 
 Hoe maak je een txt bestand aan(bij de path moet je je eigen path neerzettenen de laatste \\atm.txt is de naam voor je file die automatisch word aangemaakt):
 
-
-import java.io.*;
-
-public class atm {
-
 	public static void main(String[] args) {
 		try {
 			BufferedWriter bw = new BufferedWriter(
@@ -29,5 +24,22 @@ public class atm {
 		}
 		
 	}
+	
+	op deze manier lees je een file. vergeet niet boven de public class de import java.io.*; neer te zetten
 
-}
+public static void main(String[] args) {
+		try {
+			BufferedReader br = new BufferedReader(
+					new FileReader("C:\\Users\\Niels Perdon\\Desktop\\Perdonics\\java\\ATM\\atm.txt")
+					);
+			String s;
+			while((s = br.readLine()) != null) {
+				System.out.println(s);
+			}
+			br.close();
+		}catch(Exception ex) {
+			return;
+		}
+		
+	}
+
