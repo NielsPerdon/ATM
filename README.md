@@ -25,7 +25,7 @@ Hoe maak je een txt bestand aan(bij de path moet je je eigen path neerzettenen d
 		
 	}
 	
-	op deze manier lees je een file. vergeet niet boven de public class de import java.io.*; neer te zetten
+op deze manier lees je een file. vergeet niet boven de public class de import java.io.*; neer te zetten
 
 	public static void main(String[] args) {
 		try {
